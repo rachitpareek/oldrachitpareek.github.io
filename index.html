@@ -8,15 +8,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 
-	<!-- Use jQuery -->
 	<script>
 	// Wait for DOM to load and be ready
 	$(document).ready(function(){
+
+	    // Fade in the element
+	    $( "#name" ).fadeIn(3000);
 	  
-	    $( "#name" ).fadeIn();
-	    
-	  });
-	  
+	});
 	</script>
 
 	<div class='pagecontainer'>
@@ -26,7 +25,7 @@
 				<a href="index.html">Home</a>
 				<a href="underdev.html">About</a>
 				<a href="projects.html">Projects</a>
-				<a href="underdev.html">Companies</a>
+				<a href="companies.html">Companies</a>
 				<a href="contact.html">Contact</a>
 			</div>
 		</header>
@@ -34,7 +33,7 @@
 		<body>
 			<div class="columns">
 				<div class="left">
-					<p>
+					<p id='p1'>
 						My name is Rachit Pareek. Welcome to my website! It is still under construction.
 						<br>
 						When I'm done, this side will have a picture of me with a quick description.
