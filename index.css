@@ -16,7 +16,7 @@ a:hover {text-decoration: underline;}
   min-height: 100vh;
 }
 #name {color: white; text-align: center; float: left; width: 50%; padding: 2% 0% 0% 0%; display: none;}
-.pages {
+.pagelinks {
 	display: inline-block;
 	text-align: center;
 	font-weight: 900;

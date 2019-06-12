@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<title>My Example</title>
+<head>
+	<title>Companies</title>
+	<link rel='resetter' type='text/css' href='reset.css'>
+	<link rel='stylesheet' type='text/css' href='index.css'>
+	<link rel='stylesheet' type='text/css' href='companies.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
 
-<style>
-  #showMe {
-    background: gold;
-    padding: 20px;
-    /*display: none;*/ /* Hide the element NEEDS TO START LIKE THIS FOR THE FADE IN TO HAVE AN EFFECT!*/ 
-  }
-</style>
-
-<!-- Load jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Use jQuery -->
 <script>
-// Wait for DOM to load and be ready
-$(document).ready(function(){
-  
-  // Click event handler
-  
-  
-    // Fade in the element
-    $( "#showMe" ).fadeOut(2000); /* or you can start with it displayed an then have it fadeOut*/
-    
-  
-  
-});
+	$(document).ready(function(){
+		$("#pwdDisplayer").click(function(){
+			$("#showMe").fadeIn(1000);
+		});
+	});
 </script>
-<button>Display password</button>
+
 <p>The password is...</p>
+<button id='pwdDisplayer'>Display password</button>
 <p id="showMe">I'm not telling you my password!</p>
