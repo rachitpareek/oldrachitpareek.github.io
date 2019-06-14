@@ -1,6 +1,6 @@
 .links {
 	position: fixed;
-	top: 50%;
-	left: 50%;
-
+	top: 40vh;
+	left: 70vh;
+	border: 5px solid white;
 }
