@@ -16,18 +16,19 @@ hr {
 .container {
     display: grid;
     grid-template-columns: 66% 34%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 12% auto;
     height: 100vh;
     width: 100vw;
 }
 
 .header {
     grid-area: 1 / 1 / 2 / 3;
-    background: #C3CDE6;
+    background: #b8bae0;
     color: white;
     text-align: center;
     font-size: 75px;
     font-weight: bold;
+    border-bottom: 3px solid whitesmoke;
 }
 
 .video {
@@ -39,6 +40,7 @@ hr {
     color: white;
     text-align: center;
     font-size: 3 rem;
+    border-right: 3px solid whitesmoke
 }
 
 .sidebar {
@@ -46,8 +48,60 @@ hr {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: blue;
+    background: #C3CDE6;
     color: white;
     text-align: center;
     font-size: 3 rem;
+    vertical-align: middle;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+body {
+  background: #3b5998;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+#social-test {
+  display: table-cell;
+  text-align: center;
+  font-size: 30px;}
+  .social {
+    padding-left: 0px;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    color: rgba(256, 256, 256, 0.6);
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 1%;
+    border: 1px solid rgba(256, 256, 256, 0.6);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s; }
+    &:hover {
+      color: rgba(256, 256, 256, 1);
+      border: 1px solid rgba(256, 256, 256, 1);
+    }
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
 }
