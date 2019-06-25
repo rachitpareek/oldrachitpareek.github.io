@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Noto Sans HK', sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap);
+  }
+  
+div {
+    font-family: Noto Sans HK;
+  }
+
+hr {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: 66% 34%;
+    grid-template-rows: 10% 90%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    background: #C3CDE6;
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.video {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #C3CDE6;
+    color: white;
+    text-align: center;
+    font-size: 3 rem;
+}
+
+.sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: blue;
+    color: white;
+    text-align: center;
+    font-size: 3 rem;
+}
